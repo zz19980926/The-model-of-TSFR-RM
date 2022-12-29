@@ -9,7 +9,7 @@ from functools import reduce
 import sys
 import config.local_setting as config
 sys.path.append('..')
-from text2vec import SentenceModel,cos_sim,semantic_search, EncoderType
+from model import SentenceModel, EncoderType
 
 # dim = 384
 dim = 768
