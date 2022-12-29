@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-@author:XuMing(xuming624@qq.com)
-@description: Create Sentence-BERT model for text matching task
-"""
-
 import math
 import os
 
@@ -15,8 +9,8 @@ from torch.utils.data import DataLoader, Dataset
 from tqdm.auto import tqdm, trange
 from transformers.optimization import AdamW, get_linear_schedule_with_warmup
 
-from text2vec.sentence_model import SentenceModel
-from text2vec.text_matching_dataset import (
+from model.sentence_model import SentenceModel
+from model.text_matching_dataset import (
     TextMatchingTrainDataset,
     TextMatchingTestDataset,
     load_test_data,
@@ -24,7 +18,7 @@ from text2vec.text_matching_dataset import (
     HFTextMatchingTestDataset,
     HFTextMatchingTrainDataset
 )
-from text2vec.utils.stats_util import set_seed
+from model.stats_util import set_seed
 
 
 class SentenceBertModel(SentenceModel):
