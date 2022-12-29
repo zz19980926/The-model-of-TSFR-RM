@@ -20,11 +20,11 @@ def bert_client():
 
 def sentence_bert_client():
     # bc = BertClient(ip='192.168.1.192')  # ip address of the GPU machine
-    bc = SentenceModel("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",encoder_type=EncoderType.MEAN)
+    bc = SentenceModel("模型路径",encoder_type=EncoderType.MEAN)
     return bc
 
 def CoSENT_client():
-    bc = SentenceModel("shibing624/text2vec-base-chinese",encoder_type=EncoderType.FIRST_LAST_AVG)
+    bc = SentenceModel("模型路径",encoder_type=EncoderType.FIRST_LAST_AVG)
     return bc
 
 # 向faiss索引库增加数据
