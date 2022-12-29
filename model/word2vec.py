@@ -12,8 +12,8 @@ import numpy as np
 from numpy import ndarray
 from gensim.models import KeyedVectors
 from tqdm import tqdm
-from text2vec.utils.get_file import get_file
-from text2vec.utils.tokenizer import JiebaTokenizer
+from model.get_file import get_file
+from model.tokenizer import JiebaTokenizer
 
 pwd_path = os.path.abspath(os.path.dirname(__file__))
 default_stopwords_file = os.path.join(pwd_path, 'stopwords.txt')
