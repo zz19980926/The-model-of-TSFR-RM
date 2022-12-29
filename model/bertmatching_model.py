@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-@author:XuMing(xuming624@qq.com)
-@description: Create BERT model for text matching task
-"""
-
 import math
 import os
 
@@ -16,10 +10,10 @@ from tqdm.auto import tqdm, trange
 from transformers import BertForSequenceClassification, BertTokenizer
 from transformers.optimization import AdamW, get_linear_schedule_with_warmup
 
-from text2vec.bertmatching_dataset import BertMatchingTestDataset, BertMatchingTrainDataset, \
+from model.bertmatching_dataset import BertMatchingTestDataset, BertMatchingTrainDataset, \
     load_test_data, load_train_data, HFBertMatchingTrainDataset, HFBertMatchingTestDataset
-from text2vec.utils.stats_util import compute_spearmanr, compute_pearsonr
-from text2vec.utils.stats_util import set_seed
+from model.stats_util import compute_spearmanr, compute_pearsonr
+from model.stats_util import set_seed
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
