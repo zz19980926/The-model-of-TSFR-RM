@@ -7,7 +7,7 @@ import os
 from typing import List, Union
 from loguru import logger
 import numpy as np
-from text2vec.utils.get_file import get_file
+from model.get_file import get_file
 
 
 class NGram:
