@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-@author:XuMing(xuming624@qq.com)
-@description: 
-"""
-
-
 class NgramUtil(object):
     def __init__(self):
         pass
